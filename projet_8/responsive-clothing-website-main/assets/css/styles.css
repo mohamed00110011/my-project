@@ -1,0 +1,260 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Smooch&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(34, 52%, 54%);
+  --first-color-light: hsl(34, 52%, 64%);
+  --first-color-lighten: hsl(34, 52%, 68%);
+  --black-color: hsl(0, 0%, 4%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Smooch", cursive;
+  --biggest-font-size: 6rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+
+  /*========== Font weight ==========*/
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 17rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--first-color);
+  color: var(--black-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
+
+
+
+/*=============== HEADER & NAV ===============*/
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: var(--z-fixed);
+}
+
+.nav_container{
+  position: relative;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.nav__logo{
+  color: var(--black-color);
+  font-weight: var(--font-semi-bold);
+  padding: 15px;
+}
+
+.nav__close,
+.nav__actions,
+.nav__toggle{
+  display: flex;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+
+.nav__actions{
+  column-gap: 5rem;
+}
+
+
+/* Navigation for mobile devices */
+@media screen and (max-width: 1150px) {
+  .nav__menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: var(--first-color);
+    width: 80%;
+    height: 100%;
+    box-shadow: -2px 0 12px hsla(0, 0%, 0%, .2);
+    padding: 6rem 3rem 0;
+    transition: right .4s;
+  }
+  .nav__toggle{
+    padding-right: 15px;
+  }
+}
+
+.nav__list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+.nav__link{
+  color: var(--black-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.nav__link:hover{
+  text-decoration: underline;
+}
+
+.nav__close{
+  position: absolute;
+  top: 1.15rem;
+  right: 1.5rem;
+}
+
+
+/* Show menu */
+.show-menu{
+  right: 0;
+}
+/* Background header */
+
+
+/*=============== HOME ===============*/
+
+.home_container{
+  padding-block: 9rem 2rem;
+  display: grid;
+  align-items: center;
+  row-gap: 6rem;
+}
+
+.homeContent{
+  position: relative;
+  display: grid;
+
+}
+
+.homeCircel{
+  position: absolute;
+  inset: 0;
+  width: 280px;
+  height: 280px;
+  border: 3px solid var(--first-color-lighten);
+  border-radius: 50%;
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+}
+
+.homeSubcircle{
+  width: 246px;
+  height: 246px;
+  border:  12px solid var(--first-color-light);
+  border-radius: 50%;
+}
+
+.homeTitel{
+  position: absolute;
+  font-size: var(--biggest-font-size);
+  font-family: var(--second-font);
+  font-weight: var(--font-regular);
+}
+
+.homeImge{
+  width: 250px;
+  filter: drop-shadow(-8px 8px  16px hsla(34 , 51% , 8%,.4));
+  margin: 0 auto 2rem;
+}
+
+.homearticle{
+  text-align: center;
+}
+
+.homeProduct,
+.homePrice{
+  font-size: var(--h3-font-size);
+  margin-bottom: .25rem;
+}
+
+.homeFooter,
+.homeLanguages,
+.homeSocial{
+  display: flex;
+}
+
+.homeFooter{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeLanguages{
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.homeSocial{
+  column-gap: 1rem;
+}
+.homeSocial-link{
+  font-size: 1.25rem;
+  color: var(--black-color);
+}
+/* Swiper class */
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+/* For large devices */

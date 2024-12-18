@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: #10527c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+}
+.inputs{
+    background-color: #e5d5bc;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Data{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 4px;
+}
+.Data input{
+    padding: 5px;
+    outline: none;
+    border: 1px solid #10527c;
+}
+.Data button{
+    background: #10527c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5PX;
+    font-size: 20px;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-start;
+}
+.box{
+    background-color: #e5d5bc;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+
+}
+.item{
+    background-color: #10527c;
+    padding: 10px;
+    margin: 4px;
+    cursor: move;
+    color: white;
+}

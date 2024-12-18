@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Quicksand", sans-serif;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    
+}
+#navbar img{
+    width: 80px;
+    margin-left: 100px;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+#navbar ul {
+    display: flex;
+    margin-right:100px ;
+}
+
+#navbar ul li a{
+    padding: 15px 20px;
+    color: aliceblue;
+    font-weight: 600;
+}
+
+#navbar ul li a:hover{
+    border-bottom: 2px solid rgb(243, 166, 23);
+}
+/* ----------header Start----------- */
+header{
+    height: 100vh;
+    background: url('./img/home_bg.jpeg') center center/cover no-repeat;
+    position: relative;
+}
+
+header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+header .content h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    color: white;
+}
+
+header .content span{
+    margin-left: 10px;
+    margin-right: 10px;
+    color:  rgb(243, 166, 23);
+}
+
+header .content p{
+    font-size: 1em;
+    margin-top:20px ;
+    color: white;
+    font-size: 1em;
+}
+
+header::before{
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0 ,0.6);
+}
+header *{
+    z-index: 10;
+}
+/* ----------header end----------- */
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+/* Utility Classes */
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.primary-text{
+    color:  rgb(243, 166, 23);
+}
+/* -------------btns start--------------- */
+.btn-primary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-top: 50px;
+    border: 1px solid white;   
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.btn-secondary{
+    background-color: #383848;
+    color: white;
+    margin-top: 20px;
+    font-weight: 400;
+}
+.btn-secondary:hover{
+    background-color:rgb(243, 166, 23);
+    color: black;
+    
+}
+
+.btn-primary:hover{
+    background-color:rgb(243, 166, 23);
+    color: black;
+    
+
+    
+}
+/*---------- about start------ */
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f4f4f4;
+
+}
+
+#about .titel,#menu .titel
+{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#about h2{
+    font-size: 40px;
+    color: #383848;
+    margin-bottom: 20px;
+}
+#about .titel p{
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+#about .about-content img{
+    width: 450px;
+}
+#about .about-content p{
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+/*---------- about end----------- */
+.p{
+    margin-bottom: 30px ;
+}
+/* <!-- ----------------offers start------------------ --> */
+#offers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: url(./img/offer-background.jpg)center center/cover no-repeat;
+}
+#offers .titel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    margin-bottom: 50px;
+    
+}
+#offers .titel h2{
+    font-size: 3em;
+    font-weight: 600;
+    color: rgb(243, 166, 23);
+}
+#offers .titel p{
+    color: white;
+    font-weight: 500;
+}
+.Offer-items{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+.Offer-items img{
+    width: 200px;
+    margin-top: 15px; 
+    margin-left: 70px;
+}
+.Offer-items h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+.Offer-items p{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 0.5em;
+    line-height: 1.2;
+    padding: 20px;
+    margin-left: 24px;   
+}
+.del{
+    display: flex;
+    font-size: 1.7em;
+    margin-right: 5px;
+    margin-top: -50px;
+}
+.Offer-items span{
+    display: flex;
+    margin-left: 10px;
+    font-size: 2.4em;
+    font-weight: 600;
+    margin-top: -50px;
+}
+/* <!-- ----------------menu start ----------------- --> */
+#menu{
+    background:#f4f4f4 ;
+    padding: 5rem ;
+}
+
+#menu .titel h2{
+    font-size: 2.5em;
+    color: #383848;
+    margin-bottom: 10px;
+}
+#menu .titel p {
+    font-weight: 500;
+    color: #383848;
+}
+#menu .menu-itemes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu .menu-itemes .menu-iteme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+#menu .menu-itemes .menu-iteme img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#menu .menu-itemes .menu-iteme h3{
+    color: #383848;
+    border-bottom:1px dashed black ;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+#menu .menu-itemes .menu-iteme span{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#menu .btn{
+    display: block;
+    margin:20px auto 0;
+    cursor: pointer;
+    background-color: rgb(243, 166, 23);
+    color: white;
+}
+#menu .btn.btn:hover{
+    background-color: #383848 ;
+    color: white;
+}
+#daytime{
+    background: url(./img/daytime_bg.jpeg)center center/cover fixed no-repeat; 
+    color: #f4f4f4;
+    text-align: center;
+}
+#daytime .daytime-itemes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+#daytime .daytime-iteme{
+    
+    color: white;
+       
+}
+#daytime .daytime-iteme h3{
+    font-size: 32px;
+    margin: 20px 0 10px;
+}
+#daytime .daytime-iteme p{
+    font-weight: 500;
+}
+
+/* <!-- ----------------menu end ----------------- --> */
+/* <!-- --------------Gallary start-------------------- --> */
+#gallery{
+    background:url(./img/offer-background.jpg)center center/cover no-repeat;
+    padding: 8rem 0 6rem;
+}
+#gallery h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 3em;
+    color: #f4f4f4;
+}
+#gallery .img-gallery img{
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.8;
+}
+#gallery .img-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+#gallery .img-gallery img:hover{
+    opacity: 1;
+}
+/* <!-- --------------Gallary end-------------------- --> */
+/* <!-- --------------contact start-------------------- --> */
+#Contact{
+    padding: 5rem 0;
+    background: #f4f4f4;
+}
+#Contact.container{
+    max-width: 900px;
+}
+#Contact .contact-contact{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#Contact .contact-contact .contact-info{
+    width: 50%;
+}
+#Contact .contact-contact .contact-info div{
+    margin: 30px 0;
+    line-height: 1.7;
+}
+#Contact .contact-contact .contact-info h3{
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10px;
+}
+#Contact .contact-contact .contact-info p{
+    color: #9a9a9a;
+}
+#Contact .contact-contact .contact-info i{
+    color:rgb(243, 166, 23) ;
+    margin-right:5px ;
+}
+#Contact .contact-contact .contact-info a i{
+    color: white;
+    background-color: #383848;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+#Contact .contact-contact .contact-info a i:hover{
+    background-color: rgb(243, 166, 23);
+    color: #383848;
+}
+form{
+    width: 50%;
+}
+form input,
+textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: aliceblue;
+
+}
+#Contact .btn{
+    background-color: rgb(243, 166, 23) ;
+    color: antiquewhite;
+}
+#Contact .btn:hover{
+    background-color: #383848;
+    cursor: pointer;
+}
+/* <!-- --------------contact end-------------------- --> */
+#footer{
+    background: #383848;
+    text-align: center;
+    color: #f4f4f4;
+    padding: 15px 0;
+    font-size: 14px;
+}
+

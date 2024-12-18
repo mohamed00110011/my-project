@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #f7d8b0;
+    --light-orange:#f9aa44;
+    --beige:#ceb99d;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: var(--background);
+}
+
+#main{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.slider {
+    background-color: rgb(90, 75, 48);
+    margin-top: 900px;
+    padding: 50px;
+    border-radius: 15px;
+    position: relative;
+}
+.slider .sliders .slide img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+.slider .sliders .slide p{
+    margin: 20px 0;
+    color: white;
+}
+.slider .sliders .slide h3{
+    margin-bottom: 20px;
+    color:var(--background);
+    font-size: 2rem;
+}
+.slider .sliders .slide .content .job {
+    display: block;
+    color: white;
+    font-size: 1.1rem;
+    justify-content:space-between;
+    margin-bottom: 10px;
+    
+
+}
+.slider .sliders .slide .content .qout{
+    color: var(--light-orange);
+    font-size: 3rem;
+}
+.slider .sliders .slide{
+    display: none;
+}
+.slider .sliders .slide.active{
+    display: block;
+}
+.next{
+    position: absolute;
+    top:50%;
+    right: -50px;
+    border: none;
+    padding: 10px;
+    background-color: var(--beige);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius:50% ;
+}
+.perv{
+    position: absolute;
+    top:50%;
+    left: -50px;
+    border: none;
+    padding: 10px;
+    background-color: var(--beige);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius:50% ;
+    
+}
+.next:hover{
+    color:var(--light-orange);
+    cursor: pointer;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+.perv :hover{
+    color:var(--light-orange);
+    cursor: pointer;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+.dots{
+    margin-top:10px;
+    text-align: center;
+    cursor: pointer;
+}
+.dots .dot{
+    display: inline-block;
+    width:10px ;
+    height: 10px;
+    background-color: var(--beige);
+    border-radius: 50%;
+}
+.dots .dot.active {
+    background-color: var(--light-orange);
+}

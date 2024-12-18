@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: bisque;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+   }
+
+.logo{
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style:italic;
+    font-size: 2.8em;
+}
+.navigation a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+.navigation a:hover{
+    color:#10527C;
+}
+section{
+    padding: 200px 200px;
+}
+.main{
+    width: 100%;
+    height: 1300px;
+    display: flex;
+    align-items: center;
+    background: url(emgies/10002480960.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-position-y: -19px;
+}
+
+.main h2{
+        color:bisque;
+        font-size: 3.5em;
+        font-weight: 800;
+        letter-spacing: 2px;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: rgb(0, 0, 0);
+        
+}
+.main h2 span{
+    color:#10527C;
+    font-size: 1.5em;
+    font-weight: 600;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #10527C; 
+}
+
+.main h3{
+    color: white;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 2px;      
+}
+
+.main-btn{
+    font-size: 1em;
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: inline-block;
+    background-color:#10527C;
+    padding: 20px;
+    border-radius: 12%;
+    margin-top: 20px;
+    margin-left: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255); 
+    transition: 0.7s ease;
+}
+.main-btn:hover {
+        background-color:blue;
+        transform: scale(1.1);
+        
+        
+}
+
+.social a{
+    color: white;
+    font-size: 2em;
+    display: inline-block;
+    letter-spacing: 35px;   
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.titel{
+    display: flex;
+    justify-content: center;
+    color:#10527C ;
+    font-size: 2.2em;
+    font-weight: 800px;
+    margin-bottom: 30px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: bisque;
+    width: 21em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 45%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icons{
+    color: black;
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+
+.info h3{
+    color: black;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.titeel{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: 800px;
+    margin-bottom: 100px;
+}
+.projects {
+background-color:#10527C;
+}
+.projects .content{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.projects-card{
+    background-color: white;
+    width: 32em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 45%);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 100px;
+    transition: 0.7s ease;
+}
+.projects-card:hover{
+    transform: scale(1.5);
+}
+.projects-info{
+    text-align: center;
+}
+.projects-imge img{
+    width: 100%;   
+}
+
+.projects-category{
+    font-size: 3em;
+}
+
+.project-titel{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.hp{
+    color: brown;
+}
+
+.more-detalis{
+    text-decoration: none;
+    color: #10527C;
+    margin-top: 60px;
+    
+}
+.more-detalis:hover{
+    color:black;
+}
+.footer{
+    display: flex;
+    width: 100%;
+    height:200px ;background-color:#10527C;
+    color: aliceblue;
+    justify-content: space-between;
+
+}
+
+.footer-titel{
+    font-size: 2.5em;
+    font-weight: 500px;
+    margin-top: 30px;
+    margin-left: 10px;
+
+}
+.footer-titel span {
+    color: bisque;
+
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 25px;
+        font-size: 0.3em;
+        padding-bottom:20px;
+    }
+    .logo{
+        font-size: 5.5em;
+    }
+    .navigation a{
+        padding-left: 10px;  
+        font-size: 1.2em;     
+    }
+    .titel{
+        font-size: 1.8em;
+    }
+    section{
+        padding: 80px 20px;
+
+    }
+    .main h2{
+        font-size: 2.5em;
+    }
+    .main-btn{
+        font-size: 0.5em;
+    }
+    .social a{
+        font-size: 1.5em;
+        
+    }
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+}
